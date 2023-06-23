@@ -1,6 +1,11 @@
 .snack {
   margin: 20px;
 }
+.snack > input[type="text"] {
+  width: 12rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
 .snack-table {
   width: 100%;
   border-collapse: collapse;
