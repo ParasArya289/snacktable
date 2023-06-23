@@ -53,7 +53,9 @@ export const Table = () => {
       snack = snack?.filter(
         ({ product_name, ingredients }) =>
           product_name.toLowerCase().includes(searchQuery) ||
-          ingredients.includes(searchQuery.toLowerCase())
+          ingredients.find((el) =>
+            el.toLowerCase().includes(searchQuery.toLowerCase())
+          )
       );
     }
     return snack;
